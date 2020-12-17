@@ -1,0 +1,13 @@
+name: "My CodeQL config"
+
+disable-default-queries: true
+
+languages: python
+
+queries:
+  - name: Extended Security
+    uses: security-extended
+  - name: Security and Quality
+    uses: security-and-quality
+  - name: codeql repo
+    uses: github/codeql/java/ql/src/codeql-suites/python-code-scanning.qls@v1.26.0
